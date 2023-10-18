@@ -1,5 +1,57 @@
 @import url(responsive.css);
 
-.body {
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+
+body {
     font-family: 'Montserrat', sans-serif;
 }
+
+.flex {
+    display: flex;
+}
+
+.main-container {
+    height: calc(100vh - 100px);
+    width: 100vw;
+}
+
+/* NAV */
+
+nav {
+    min-width: 200px;
+    min-height: 100%;
+    background-color: blue;
+
+}
+
+/* MAIN */
+
+main {
+    width: calc(100vw - 200px);
+    height: 100%;
+    background-color: red;
+}
+
+/* FOOTER */
+
+footer {
+    height: 100px;
+    min-height: 100px;
+    width: 100vw;
+    background-color: green;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+}
+
+
+
