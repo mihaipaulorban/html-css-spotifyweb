@@ -38,8 +38,11 @@ body {
 }
 
 h3 {
-    color: white;
     font-size: 10px;
+}
+
+h2 {
+    margin: 20px 0;
 }
 
 .select,
@@ -61,7 +64,7 @@ h3 {
     content: '';
     position: absolute;
     left: 25px;
-    bottom: -5px;
+    bottom: 2px;
     height: 2px;
     width: 40%; 
     background-color: rgb(111, 255, 0); 
@@ -183,6 +186,8 @@ main {
     height: 100%;
     background-color: #141922;
     overflow-y: scroll;
+    overflow-x: hidden;
+    min-width: 200px;
 }
 
 .upgrade {
@@ -206,10 +211,36 @@ main {
 .category {
     justify-content: center;
     padding: 15px;
+    flex-wrap: wrap;
 }
+
 .ctg {
-    padding: 0 8px;
+    padding: 8px 8px;
 }
+
+/* SEZIONE CARDS */
+
+.card-section {
+    margin: 30px 20px;
+}
+
+ul {
+    display: grid;
+    grid-row-gap: 16px;
+    grid-column-gap: 1px;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+ }
+
+ li {
+    height: 250px;
+    width: 200px;
+    background: #303035;
+    border-radius: 8px;
+    list-style-type: none;
+  }
+
+
+
 
 /* FOOTER */
 
@@ -250,7 +281,10 @@ footer {
     .disappear {
         display: none;
     }
+
 }
+
+
 
 
 
